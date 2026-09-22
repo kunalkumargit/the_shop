@@ -1,0 +1,6 @@
+{
+  "buildCommand": "cd The_Shop && npm run build",
+  "installCommand": "cd The_Shop && npm ci",
+  "outputDirectory": "The_Shop/dist",
+  "framework": "vite"
+}

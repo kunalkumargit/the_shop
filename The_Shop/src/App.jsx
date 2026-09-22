@@ -14,11 +14,15 @@ import Login from "./pages/login";
 import Checkout from "./pages/cheackout";
 import Contact from "./pages/contact";
 
+const basename = import.meta.env.BASE_URL === "/"
+  ? undefined
+  : import.meta.env.BASE_URL.replace(/\/$/, "");
+
 export default function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <BrowserRouter basename="/the_shop">
+        <BrowserRouter basename={basename}>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
