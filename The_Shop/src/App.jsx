@@ -18,7 +18,7 @@ export default function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/the_shop">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
